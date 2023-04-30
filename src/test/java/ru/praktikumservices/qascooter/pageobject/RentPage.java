@@ -8,6 +8,7 @@ import static com.codeborne.selenide.Selenide.$x;
 import static ru.praktikumservices.qascooter.utils.ExpectedTextResults.EXPECTED_RESULT_TEXT_NINTH;
 
 public class RentPage {
+    //Elements
     private SelenideElement
             whenDelieverScooter = $x("//input[@placeholder='* Когда привезти самокат']"),
             chooseDate = $x("//div[@aria-label='Choose пятница, 28-е апреля 2023 г.']"),
@@ -19,6 +20,7 @@ public class RentPage {
             btnOfAcceptOrderYes = $x("//button[@class='Button_Button__ra12g Button_Middle__1CSJM'][text()='Да']"),
             checkOfSuccesOrder = $x("//div[@class='Order_ModalHeader__3FDaJ']");
 
+    //Actions
     @Step("Заполнить все поля на странице 'Про аренду'")
     public RentPage orderScooterRent() {
         whenDelieverScooter.click();

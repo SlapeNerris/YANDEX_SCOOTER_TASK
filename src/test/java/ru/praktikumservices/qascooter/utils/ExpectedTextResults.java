@@ -10,6 +10,4 @@ public class ExpectedTextResults {
     public static final String EXPECTED_RESULT_TEXT_SEVENTH = "Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.";
     public static final String EXPECTED_RESULT_TEXT_EIGHTH = "Да, обязательно. Всем самокатов! И Москве, и Московской области.";
     public static final String EXPECTED_RESULT_TEXT_NINTH = "Заказ оформлен";
-
-
 }

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.praktikumservices.qascooter.utils.BaseTest;
 
-@Epic("Заказ самоката")
+@Epic("Заказать самокат")
 public class OrderScooterTest extends BaseTest {
 
     @Feature("Заказ самоката")

@@ -5,14 +5,8 @@ import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selenide.$x;
 
-//Заказ самоката. Весь флоу позитивного сценария. Обрати внимание, что есть две точки входа в сценарий: кнопка «Заказать» вверху страницы и внизу.
-//Из чего состоит позитивный сценарий:
-//Нажать кнопку «Заказать». На странице две кнопки заказа.
-//Заполнить форму заказа.
-//Проверить, что появилось всплывающее окно с сообщением об успешном создании заказа.
 public class WhoIsTheScooterForPage {
-    private SelenideElement cookieAcceptButton = $x("//button[@id='rcc-confirm-button']");
-
+    //Elements
     private SelenideElement
             btnOrder = $x("//button[@class='Button_Button__ra12g']"),
             fillFormName = $x("//input[@placeholder='* Имя']"),
@@ -23,6 +17,7 @@ public class WhoIsTheScooterForPage {
             fillFormNumber = $x("//input[@placeholder='* Телефон: на него позвонит курьер']"),
             btnNext = $x("//button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
 
+            //Actions
             @Step("Заполнить все поля на странице 'Для кого самокат'")
             public WhoIsTheScooterForPage orderScooterForSomeone() {
                 btnOrder.click();

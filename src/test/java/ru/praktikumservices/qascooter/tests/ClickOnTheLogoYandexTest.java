@@ -8,7 +8,7 @@ import ru.praktikumservices.qascooter.utils.BaseTest;
 
 
 
-@Epic("Нажать на лого Яндекс и попасть на главную страницу")
+@Epic("Нужно нажать на лого Яндекс и перейти на главную страницу")
 public class ClickOnTheLogoYandexTest extends BaseTest {
 
     @Feature("Нажать на лого Яндекс и попасть на поисковую страницу")

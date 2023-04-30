@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.praktikumservices.qascooter.utils.BaseTest;
 
-@Epic("Проверка некорректного статуса заказа")
+@Epic("Нужно ввести неккоретный номер заказа")
 public class IncorrectStatusTest extends BaseTest {
 
     @Feature("Проверка некорректного статуса заказа")

@@ -1,15 +1,14 @@
 package ru.praktikumservices.qascooter.utils;
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import ru.praktikumservices.qascooter.config.WebDriverProvider;
 import ru.praktikumservices.qascooter.pageobject.*;
-import ru.praktikumservices.qascooter.tests.IncorrectStatusTest;
 
 import static ru.praktikumservices.qascooter.config.ConfigSingle.config;
 
@@ -28,6 +27,8 @@ public class BaseTest extends WebDriverProvider {
     public static void beforeClass(){
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         createDriver();
+        Configuration.driverManagerEnabled = true;
+        Configuration.browserSize = "2560x1440";
         Selenide.open(config.getBaseUriProperties());
         acceptCookies.acceptAndCheckCookies();
     }

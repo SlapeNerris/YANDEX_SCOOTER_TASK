@@ -6,7 +6,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import ru.praktikumservices.qascooter.utils.BaseTest;
 
-@Epic("Выпадающий список в разделе «Вопросы о важном»")
+@Epic("Выпадающий список на главной странице")
 public class DropDownListTest extends BaseTest {
 
     @Feature("Выпадающий список в разделе «Вопросы о важном»")
